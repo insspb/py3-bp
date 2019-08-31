@@ -1,0 +1,44 @@
+### Temp files ###
+
+temp/
+tmp/
+
+### Tests ###
+
+.tox
+XDG_CACHE_HOME
+.coverage*
+.pytest_cache
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.ipynb
+
+### VScode ###
+
+.vscode
+.history
+
+### PyCharm ###
+
+.idea
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+
+venv/
+.venv/
+
+# Documentation builds
+
+docs/build

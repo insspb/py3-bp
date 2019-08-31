@@ -1,0 +1,12 @@
+# Templating
+cookiecutter
+
+# Testing
+pytest
+tox
+
+# Documentation and docs linting
+sphinx
+sphinx-rtd-theme
+doc8
+recommonmark
