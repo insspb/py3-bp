@@ -8,11 +8,11 @@ need on one place.
 
 This project for small non-web projects.
 
-## Current project features:
+## Current project features
 
 * None
 
-## Project development plan:
+## Project development plan
 
 * Different licences templates
 * Pytest requirement option
@@ -27,6 +27,6 @@ This project for small non-web projects.
 
 Currently this project is in 'I have an idea' stage.
 
-## Supported python versions:
+## Supported python versions
 
 * Python 3.5+
