@@ -28,9 +28,6 @@ setup(
     author='{{cookiecutter.author}}',
     author_email='{{cookiecutter.author_email}}',
     url='https://github.com/insspb/py3-bp',
-    packages=[
-        'cookiecutter',
-    ],
     include_package_data=True,
     python_requires='>=3.5',
     install_requires=[
