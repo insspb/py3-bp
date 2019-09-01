@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'python3-boilerplate'
+project = 'py3-bp'
 copyright = '2019, Andrey Shpak'
 author = 'Andrey Shpak'
 

@@ -10,3 +10,5 @@ Welcome to python3-boilerplate's documentation!
    :maxdepth: 2
 
    Overview <README.md>
+   Templates description <templates.rst>
+   license

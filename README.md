@@ -1,10 +1,12 @@
 # Python 3 boilerplate template
 
+[![docs](https://readthedocs.org/projects/py3-bp/badge/?version=latest)](https://readthedocs.org/projects/py3-bp/?badge=latest)
+
 As a [freelancer](https://www.upwork.com/fl/andreyshpak) I often require
 to do small projects on python. As any developer I do not like to do same
 boilerplate work each time, but I like to work in expected environment.
 So I decided to make this small project and include everything I often
-need on one place.
+need in one place.
 
 This project for small non-web projects.
 
@@ -27,6 +29,6 @@ This project for small non-web projects.
 
 Currently this project is in 'I have an idea' stage.
 
-## Supported python versions
+## Project python version
 
-* Python 3.5+
+This project is developed and tested on python version 3.6 and python 3.7.
