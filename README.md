@@ -31,4 +31,5 @@ Currently this project is in 'I have an idea' stage.
 
 ## Project python version
 
-This project is developed and tested on python version 3.6 and python 3.7.
+This project is developed and tested on python version 3.6 and python 3.7, but
+should work under any python 3.2+.
