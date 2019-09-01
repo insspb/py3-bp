@@ -12,52 +12,52 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.authors_format }}' == 'Markdown':
         remove_file('AUTHORS.rst')
-        remove_file('docs/AUTHORS.rst')
-    elif '{{ cookiecutter.authors_format }}' == 'Rest':
+        remove_file('docs/source/AUTHORS.rst')
+    elif '{{ cookiecutter.authors_format }}' == 'reStructuredText':
         remove_file('AUTHORS.md')
-        remove_file('docs/AUTHORS.md')
+        remove_file('docs/source/AUTHORS.md')
     else:
         remove_file('AUTHORS.rst')
-        remove_file('docs/AUTHORS.rst')
+        remove_file('docs/source/AUTHORS.rst')
         remove_file('AUTHORS.md')
-        remove_file('docs/AUTHORS.md')
+        remove_file('docs/source/AUTHORS.md')
 
     if '{{ cookiecutter.readme_format }}' == 'Markdown':
         remove_file('README.rst')
-        remove_file('docs/README.rst')
-    elif '{{ cookiecutter.readme_format }}' == 'Rest':
+        remove_file('docs/source/README.rst')
+    elif '{{ cookiecutter.readme_format }}' == 'reStructuredText':
         remove_file('README.md')
-        remove_file('docs/README.md')
+        remove_file('docs/source/README.md')
     else:
         remove_file('README.rst')
-        remove_file('docs/README.rst')
+        remove_file('docs/source/README.rst')
         remove_file('README.md')
-        remove_file('docs/README.md')
+        remove_file('docs/source/README.md')
 
     if '{{ cookiecutter.history_format }}' == 'Markdown':
         remove_file('HISTORY.rst')
-        remove_file('docs/HISTORY.rst')
-    elif '{{ cookiecutter.history_format }}' == 'Rest':
+        remove_file('docs/source/HISTORY.rst')
+    elif '{{ cookiecutter.history_format }}' == 'reStructuredText':
         remove_file('HISTORY.md')
-        remove_file('docs/HISTORY.md')
+        remove_file('docs/source/HISTORY.md')
     else:
         remove_file('HISTORY.rst')
-        remove_file('docs/HISTORY.rst')
+        remove_file('docs/source/HISTORY.rst')
         remove_file('HISTORY.md')
-        remove_file('docs/HISTORY.md')
+        remove_file('docs/source/HISTORY.md')
 
     if '{{ cookiecutter.changelog_format }}' == 'Markdown':
         remove_file('CHANGELOG.rst')
-        remove_file('docs/CHANGELOG.rst')
-    elif '{{ cookiecutter.changelog_format }}' == 'Rest':
+        remove_file('docs/source/CHANGELOG.rst')
+    elif '{{ cookiecutter.changelog_format }}' == 'reStructuredText':
         remove_file('CHANGELOG.md')
-        remove_file('docs/CHANGELOG.md')
+        remove_file('docs/source/CHANGELOG.md')
     else:
         remove_file('CHANGELOG.rst')
-        remove_file('docs/CHANGELOG.rst')
+        remove_file('docs/source/CHANGELOG.rst')
         remove_file('CHANGELOG.md')
-        remove_file('docs/CHANGELOG.md')
+        remove_file('docs/source/CHANGELOG.md')
 
     if '{{ cookiecutter.license }}' == 'None':
         remove_file('LICENSE')
-        remove_file('docs/license.rst')
+        remove_file('docs/source/license.rst')

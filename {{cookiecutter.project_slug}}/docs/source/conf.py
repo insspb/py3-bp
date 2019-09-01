@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = '{{cookiecutter.project_slug}}'
-copyright = '{{cookiecutter.year}}, {{cookiecutter.author}}'
+copyright = '{{cookiecutter.current_year}}, {{cookiecutter.author}}'
 author = '{{cookiecutter.author}}'
 
 # The full version, including alpha/beta/rc tags
