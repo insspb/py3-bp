@@ -1,1 +1,1 @@
-cookiecutter
+git+git://github.com/cookiecutter/cookiecutter.git#egg=cookiecutter

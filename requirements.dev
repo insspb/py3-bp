@@ -1,5 +1,5 @@
 # Templating
-cookiecutter
+-e git+git://github.com/cookiecutter/cookiecutter.git#egg=cookiecutter
 
 # Testing
 pytest
