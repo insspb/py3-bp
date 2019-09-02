@@ -1,6 +1,7 @@
 # Python 3 boilerplate template
 
 [![docs](https://readthedocs.org/projects/py3-bp/badge/?version=latest)](https://readthedocs.org/projects/py3-bp/?badge=latest)
+[![build](https://img.shields.io/travis/insspb/py3-bp.svg)](https://travis-ci.org/insspb/py3-bp)
 
 As a [freelancer](https://www.upwork.com/fl/andreyshpak) I often require
 to do small projects on python. As any developer I do not like to do same
@@ -14,7 +15,7 @@ This project for small non-web projects.
 
 * None
 
-## Project development plan
+## Roadmap
 
 * Different licences templates
 * Pytest requirement option

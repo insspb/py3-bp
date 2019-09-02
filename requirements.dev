@@ -1,6 +1,3 @@
-# Templating
--e git+git://github.com/cookiecutter/cookiecutter.git#egg=cookiecutter
-
 # Testing
 pytest
 tox
@@ -10,3 +7,8 @@ sphinx
 sphinx-rtd-theme
 doc8
 recommonmark
+
+# Code linting
+flake8
+
+-r requirements.txt
