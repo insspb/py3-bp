@@ -1,5 +1,5 @@
 {
-  "project_name": "Python Boilerplate",
+  "project_name": "Py3 Bp",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "Just another small project from boilerplate.",
   "author": "Andrey Shpak",
@@ -19,6 +19,7 @@
   "linux_support": ["yes", "no"],
   "windows_support": ["no", "yes"],
   "vcs": ["Gitlab", "Github", "Bitbucket"],
+  "vcs_username": "developer",
   "license": [
     "MIT",
     "BSD-3",
