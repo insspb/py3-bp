@@ -37,7 +37,6 @@
   "readme_format": ["Markdown", "reStructuredText", "None"],
   "changelog_format": ["None", "Markdown", "reStructuredText"],
   "authors_format": ["None", "Markdown", "reStructuredText"],
-  "history_format": ["None", "Markdown", "reStructuredText"],
   "require_sql_alchemy": ["yes", "no"],
   "sql_alchemy_database_engine": ["postgres", "mysql", "None"],
   "require_alembic": ["yes", "no"],

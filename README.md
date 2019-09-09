@@ -13,7 +13,8 @@ This project for small non-web projects.
 
 ## Current project features
 
-* None
+Project is under development. Unreleased features available at master branch.
+Most fresh changes data available in [CHANGELOG](CHANGELOG)
 
 ## Roadmap
 

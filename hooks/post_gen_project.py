@@ -34,18 +34,6 @@ if __name__ == '__main__':
         remove_file('README.md')
         remove_file('docs/source/README.md')
 
-    if '{{ cookiecutter.history_format }}' == 'Markdown':
-        remove_file('HISTORY.rst')
-        remove_file('docs/source/HISTORY.rst')
-    elif '{{ cookiecutter.history_format }}' == 'reStructuredText':
-        remove_file('HISTORY.md')
-        remove_file('docs/source/HISTORY.md')
-    else:
-        remove_file('HISTORY.rst')
-        remove_file('docs/source/HISTORY.rst')
-        remove_file('HISTORY.md')
-        remove_file('docs/source/HISTORY.md')
-
     if '{{ cookiecutter.changelog_format }}' == 'Markdown':
         remove_file('CHANGELOG.rst')
         remove_file('docs/source/CHANGELOG.rst')

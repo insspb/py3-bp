@@ -11,4 +11,5 @@ Welcome to python3-boilerplate's documentation!
 
    Overview <README.md>
    Templates description <templates.rst>
+   Changelog <CHANGELOG.md>
    license
