@@ -9,6 +9,10 @@ and this project adheres to [Semantic versioning](https://semver.org/spec/v2.0.0
 
 Unreleased features are usually available in HEAD master branch.
 
+## [0.0.3] - 2019-09-19
+
+### Added
+
 * Readme file generation for new projects. Available formats: `Markdown`
 or `reStructuredText`
 * Authors file generation for new projects. Available formats: `Markdown`
@@ -24,8 +28,7 @@ folder and as `reStructuredText` in `docs` folder.
   * Apache Software License 2.0
   * unlicensed (Public domain)
 * Sphinx doc folder and project generation. Configured for separated `source`
-and `build` folders. Cannot be switched off at this moment.
-* `setup.py` and `setup.cfg` generation. Files will work, but some adjustment
-required if you want to use them on pypi. Not all planned features included.
+and `build` folders.
+* `setup.py` and `setup.cfg` generation.
 * `requirements.txt` and `requirements.dev` generation based on template
 choices.

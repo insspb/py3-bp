@@ -1,11 +1,16 @@
 #!/usr/bin/env python
 import os
+import shutil
 
 PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 
 def remove_file(filepath):
     os.remove(os.path.join(PROJECT_DIRECTORY, filepath))
+
+
+def remove_directory(dirpath):
+    shutil.rmtree(os.path.join(PROJECT_DIRECTORY, dirpath), ignore_errors=False, onerror=None)
 
 
 if __name__ == '__main__':
@@ -49,3 +54,6 @@ if __name__ == '__main__':
     if '{{ cookiecutter.license }}' == 'None':
         remove_file('LICENSE')
         remove_file('docs/source/license.rst')
+
+    if '{{ cookiecutter.use_sphinx_documentation }}' == 'no':
+        remove_directory('docs')

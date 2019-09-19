@@ -4,18 +4,35 @@ sudo: required
 
 language: python
 
-matrix:
+jobs:
   include:
-    - python: 3.7
-      env: TOXENV=docs
-    - python: 3.6
-      env: TOXENV=py36
-    - python: 3.7
-      env: TOXENV=py37
-    - python: pypy
-      env: TOXENV=pypy
+  - python: 3.7
+    env: TOXENV=docs
+  - python: 3.6
+    env: TOXENV=py36
+  - python: 3.7
+    env: TOXENV=py37
+  - python: pypy
+    env: TOXENV=pypy
+  - stage: deploy
+    python: 3.7
+    install: pip install -U setuptools
+    script: skip
+    deploy:
+      - provider: pypi
+        edge: true
+        skip_existing: true
+        username: ashpak
+        password:
+          secure: nwDiDWa2DN9NPTXNPnbPbTSb7uIpFR6N3ALSp+KzJy5TXHOjPuwYONxm4mWByTynR4iSbv88LO3PVGwD8RPLGZQFNouv5+LRFEzz4x6ynC82bLo8btR4OrGGbBUcRtWDP6fUOVxdtNRaaGqat8Qx5CRGad1cABRdhuJRjXUXffvkhJTuLtE5dKFjZtF5wyctY5yqDwE7cdbhp6TvHPrTIl6eFwTqyuNJES0ch1TWO9tEM/2uo2E6t9h9BfrxRSMX01PBbjDvSw+ZFRkrSW2o4vljCv8lsYFrk45B6lbZSK8INOyjKiXCILW9A8YBAeCeGcXfvyXt/0md+YNEYAUvU4mkG9AMkT4bHrK1LLvnjOxKd54Ub3FODAMUG3Aevb5oKrp8JmfYD1Zwb56mco5FInHHcPeN5yq19QWc0Lv/nWzRuq+Xut+hYZMj/LOgNlvL5iuRd6h1eB51JYuceY0LtoyVtu6QpkkXrns+xDVJGfoVQGNK5QbZLHvXviqw2IWzfxMs2Oh0X3k9sRo63fCzZ4u/wE29wqXD9Sp6cY5sjm7Ub8Ur4OFghnw0ZlGsEbALishDXEIh+iQOIMyoA9Uc943IflcxEdCsHVq2V1595XmPWJcKawN5L9fp7xQZwPIHM735o234RpZU2or9nzsYw0O9cs6OFKtPPAQJhTFc3zw=
+        on:
+          tags: true
 
 install:
-  - pip install tox-travis
+- pip install tox-travis
 
 script: tox
+
+stages:
+  - test
+  - name: deploy

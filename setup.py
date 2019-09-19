@@ -25,8 +25,13 @@ setup(
     license='MIT',
     license_file='LICENSE',
     zip_safe=True,
+    project_urls={
+        "Bug Tracker": "https://github.com/insspb/py3-bp/issues",
+        "Documentation": "https://py3-bp.readthedocs.io",
+        "Source Code": "https://github.com/insspb/py3-bp",
+    },
     classifiers=[
-        'Development Status :: 1 - Planning',
+        'Development Status :: 4 - Beta',
         'Framework :: Pytest',
         'Framework :: Sphinx',
         'Framework :: tox',

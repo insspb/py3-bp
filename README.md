@@ -11,23 +11,49 @@ need in one place.
 
 This project for small non-web projects.
 
+Project is under development. Unreleased features available at master branch.
+Most fresh changes data available in [CHANGELOG](CHANGELOG.md)
+
 ## Current project features
 
-Project is under development. Unreleased features available at master branch.
-Most fresh changes data available in [CHANGELOG](CHANGELOG)
+* Readme file generation for new projects. Available formats: `Markdown`
+or `reStructuredText`
+* Authors file generation for new projects. Available formats: `Markdown`
+or `reStructuredText`
+* Changelog file generation for new projects. Available formats: `Markdown`
+or `reStructuredText`
+* License file generation for new projects. Generated as `LICENSE` in root
+folder and as `reStructuredText` in `docs` folder.
+ Available licenses:
+  * MIT
+  * BSD-3
+  * GNU GPL v3.0
+  * Apache Software License 2.0
+  * unlicensed (Public domain)
+* Sphinx doc folder and project generation. Configured for separated `source`
+and `build` folders.
+* `setup.py` and `setup.cfg` generation.
+* `requirements.txt` and `requirements.dev` generation based on template
+choices.
+
+## Usage
+
+Single time usage example, requires installation of
+[Cookiecutter](https://github.com/cookiecutter/cookiecutter):
+
+```bash
+cookiecutter https://github.com/insspb/py3-bp
+```
 
 ## Roadmap
 
-* Different licences templates
-* Pytest requirement option
-* tox requirement option
-* nox requirement option
-* SQLAlchemy+mysql requirement option
-* Alembic requirement option
-* Travis CI option
-* Gitlab CI option
-* AppVeyor CI option
-* Sphinx documentation option
+* Include pytest sample tests if pytest enabled
+* Include tox sample configuration files
+* Include nox sample configuration files
+* Include Alembic sample configuration files
+* Include Travis CI sample configuration files
+* Include Gitlab CI sample configuration files
+* Include AppVeyor CI sample configuration files
 
 Currently this project is in 'I have an idea' stage.
 
