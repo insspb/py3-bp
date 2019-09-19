@@ -27,11 +27,17 @@ setup(
     {%- endif %}
     author='{{cookiecutter.author}}',
     author_email='{{cookiecutter.author_email}}',
-    url='https://github.com/insspb/py3-bp',
+    {%- if cookiecutter.vcs == 'Gitlab' %}
+    url='https://gitlab.com/{{cookiecutter.vcs_username}}/{{cookiecutter.project_slug}}',
+    {%- elif cookiecutter.vcs == 'Github' %}
+    url='https://github.com/{{cookiecutter.vcs_username}}/{{cookiecutter.project_slug}}',
+    {%- elif cookiecutter.vcs == 'Bitbucket' %}
+    url='https://bitbucket.org/{{cookiecutter.vcs_username}}/{{cookiecutter.project_slug}}',
+    {%- endif %}
     include_package_data=True,
-    python_requires='>=3.5',
+
+    python_requires='>={{cookiecutter.minimum_python_version}}, <={{cookiecutter.maximum_python_version}}',
     install_requires=[
-        'cookiecutter'
     ],
     {%- if cookiecutter.license == 'Apache Software License 2.0' %}
     license='Apache Software License 2.0',
@@ -64,53 +70,40 @@ setup(
         {%- endif %}
         'Natural Language :: English',
         'Programming Language :: Python',
-        {% if cookiecutter.python_27_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 2.7 < cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         {% endif -%}
         'Programming Language :: Python :: 3',
-        {% if cookiecutter.python_32_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.2 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.2',
         {% endif -%}
-        {% if cookiecutter.python_33_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.3 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.3',
         {% endif -%}
-        {% if cookiecutter.python_34_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.4 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.4',
         {% endif -%}
-        {% if cookiecutter.python_35_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.5 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.5',
         {% endif -%}
-        {% if cookiecutter.python_36_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.6 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.6',
         {% endif -%}
-        {% if cookiecutter.python_37_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.6 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.7',
         {% endif -%}
-        {% if cookiecutter.python_38_support == 'yes' -%}
+        {% if cookiecutter.minimum_python_version |float <= 3.8 <= cookiecutter.maximum_python_version |float -%}
         'Programming Language :: Python :: 3.8',
         {% endif -%}
-        {% if cookiecutter.python_39_support == 'yes' -%}
-        'Programming Language :: Python :: 3.9',
-        {% endif -%}
         'Topic :: Software Development',
-        'Topic :: Utilities'
+        'Topic :: Utilities',
     ],
     platforms=[
         'Any'
     ],
     keywords=(
-        'cookiecutter',
         'python',
         'python3',
-        'boilerplate',
-        'boilerplate-template',
-        'template',
-        'skeleton',
-        'scaffolding',
-        'scaffoldings',
-        'scaffolding-framework',
-        'skeleton-template',
-        'skeleton-application',
     ),
 )

@@ -1,0 +1,23 @@
+# Testing
+{% if cookiecutter.test_framework == 'pytest' -%}
+pytest
+pytest-cov
+{% endif -%}
+{% if cookiecutter.test_engine == 'tox' or cookiecutter.test_engine == 'both' -%}
+tox
+{% endif -%}
+{% if cookiecutter.test_engine == 'nox' or cookiecutter.test_engine == 'both' -%}
+nox
+{% endif -%}
+{% if cookiecutter.use_sphinx_documentation == 'yes' -%}
+# Documentation and docs linting
+sphinx
+sphinx-rtd-theme
+doc8
+recommonmark
+{% endif -%}
+
+# Code linting
+flake8
+
+-r requirements.txt

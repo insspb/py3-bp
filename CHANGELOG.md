@@ -27,3 +27,5 @@ folder and as `reStructuredText` in `docs` folder.
 and `build` folders. Cannot be switched off at this moment.
 * `setup.py` and `setup.cfg` generation. Files will work, but some adjustment
 required if you want to use them on pypi. Not all planned features included.
+* `requirements.txt` and `requirements.dev` generation based on template
+choices.

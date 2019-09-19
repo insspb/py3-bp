@@ -1,0 +1,12 @@
+{% if cookiecutter.require_sql_alchemy == 'yes' -%}
+SQLAlchemy
+{% endif -%}
+{% if cookiecutter.sql_alchemy_database_engine == 'postgres' -%}
+psycopg2
+{% endif -%}
+{% if cookiecutter.sql_alchemy_database_engine == 'mysql' -%}
+pymysql
+{% endif -%}
+{% if cookiecutter.require_alembic == 'yes' -%}
+alembic
+{% endif -%}
