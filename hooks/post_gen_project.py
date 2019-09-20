@@ -33,11 +33,6 @@ if __name__ == '__main__':
     elif '{{ cookiecutter.readme_format }}' == 'reStructuredText':
         remove_file('README.md')
         remove_file('docs/source/README.md')
-    else:
-        remove_file('README.rst')
-        remove_file('docs/source/README.rst')
-        remove_file('README.md')
-        remove_file('docs/source/README.md')
 
     if '{{ cookiecutter.changelog_format }}' == 'Markdown':
         remove_file('CHANGELOG.rst')

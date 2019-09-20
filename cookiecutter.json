@@ -44,7 +44,7 @@
   "use_gitlab_ci": ["yes", "no"],
   "use_appveyor_ci": ["no", "yes"],
   "use_sphinx_documentation": ["yes", "no"],
-  "readme_format": ["Markdown", "reStructuredText", "None"],
+  "readme_format": ["Markdown", "reStructuredText"],
   "changelog_format": ["None", "Markdown", "reStructuredText"],
   "authors_format": ["None", "Markdown", "reStructuredText"],
   "require_sql_alchemy": ["no", "yes"],
