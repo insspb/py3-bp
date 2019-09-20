@@ -1,5 +1,5 @@
 ---
-name: 🐛Bug report
+name: Bug report
 about: Create a report to help us improve
 ---
 <!--- Verify first that your issue was not already discussed on GitHub -->
@@ -12,6 +12,9 @@ understand the problem and helps check that it is not caused by something in
 your code. 
 -->
 ## Bug report
+
+### ISSUE TYPE
+- Bug report
 
 ### Expected Behavior:
 
@@ -26,8 +29,6 @@ your code.
 // REPLACE ME: Paste a log of command(s) you ran and {{ cookiecutter.project_name }} output, tracebacks, etc, here
 ```
 
-### Environment setup:
+### OS / ENVIRONMENT
+<!--- Provide all relevant information below, e.g. OS version, browser, etc. -->
 
-* {{ cookiecutter.project_name }} version:
-* Python version:
-* Operating System:

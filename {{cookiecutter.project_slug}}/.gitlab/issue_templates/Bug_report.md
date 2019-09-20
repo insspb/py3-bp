@@ -1,7 +1,3 @@
----
-name: Bug report
-about: Create a report to help us improve
----
 <!--- Verify first that your issue was not already discussed on GitHub -->
 <!-- If you'd like to report a bug in {{ cookiecutter.project_name }},
 fill out the template below. Provide any extra information that may be

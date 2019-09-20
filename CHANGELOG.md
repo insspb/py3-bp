@@ -9,6 +9,9 @@ and this project adheres to [Semantic versioning](https://semver.org/spec/v2.0.0
 
 Unreleased features are usually available in HEAD master branch.
 
+* Generation of pull request templates for Github and Gitlab engines.
+* Generation of issues templates for Github and Gitlab engines.
+
 ## [0.0.3] - 2019-09-19
 
 ### Added
