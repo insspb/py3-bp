@@ -4,10 +4,28 @@
    contain the root `toctree` directive.
 
 Welcome to {{cookiecutter.project_name}}'s documentation!
-===============================================
+============================================================================================
 
 .. toctree::
-   :maxdepth: 2
-
+   :maxdepth: 1
+{% if cookiecutter.readme_format == 'Markdown' %}
    Overview <README.md>
+{%- endif %}
+{%- if cookiecutter.readme_format == 'reStructuredText' %}
+   Overview <README.rst>
+{%- endif %}
+{%- if cookiecutter.authors_format == 'Markdown' %}
+   Authors <AUTHORS.md>
+{%- endif %}
+{%- if cookiecutter.authors_format == 'reStructuredText' %}
+   Authors <AUTHORS.rst>
+{%- endif %}
+{%- if cookiecutter.changelog_format == 'Markdown' %}
+   Changelog <CHANGELOG.md>
+{%- endif %}
+{%- if cookiecutter.changelog_format == 'reStructuredText' %}
+   Changelog <CHANGELOG.rst>
+{%- endif %}
+{%- if cookiecutter.license != 'None' %}
    license
+{% endif %}

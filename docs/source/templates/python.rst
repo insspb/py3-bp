@@ -3,9 +3,9 @@ Python versions available
 
 *Implemented in 0.0.3*
 
-This boilerplate include two questions about python version for your project. 
+This boilerplate include two questions about python version for your project.
 First is minimum python version supported, second is maximum python version
-supported.  
+supported.
 This two answers should be between available python versions:
 
 - Python 2.7

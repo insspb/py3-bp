@@ -9,8 +9,22 @@ and this project adheres to [Semantic versioning](https://semver.org/spec/v2.0.0
 
 Unreleased features are usually available in HEAD master branch.
 
+### Added
+
 * Generation of pull request templates for Github and Gitlab engines.
 * Generation of issues templates for Github and Gitlab engines.
+* Github/Gitlab related templates documentation
+* Sphinx related templates documentation
+
+### Fixed
+
+* Sphinx template do not include ``README``, ``CHANGELOG``,
+``AUTHORS``, ``LICENSE`` files correctly.
+
+### Removed
+
+* ``None`` option removed for "Readme format?" question. Reason: ``None``
+selection can break other parts of template generation.
 
 ## [0.0.3] - 2019-09-19
 

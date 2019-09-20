@@ -40,14 +40,14 @@ License
 -------
 {% endif %}
 {% if cookiecutter.license == 'MIT' -%}
-This project distributed under `MIT license <LICENSE>`_.
+This project distributed under **MIT license**.
 {%- elif cookiecutter.license == 'BSD-3' -%}
-This project distributed under `BSD-3 license <LICENSE>`_.
+This project distributed under **BSD-3 license**.
 {%- elif cookiecutter.license == 'GNU GPL v3.0' -%}
-This project distributed under `GNU GPL v3.0 license <LICENSE>`_.
+This project distributed under **GNU GPL v3.0 license**.
 {%- elif cookiecutter.license == 'Apache Software License 2.0' -%}
-This project distributed under `Apache Software License 2.0 <LICENSE>`_.
+This project distributed under **Apache Software License 2.0**.
 {%- elif cookiecutter.license == 'unlicensed' -%}
-This project distributed as `public domain <LICENSE>`_ software.
+This project distributed as **public domain** software.
 {%- else -%}
 {% endif %}
