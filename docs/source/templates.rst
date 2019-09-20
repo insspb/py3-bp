@@ -6,9 +6,8 @@ one or another solutions was chosen. This documents has some recommendations
 on best selections recommended for wide use.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :titlesonly:
+   :glob:
 
-   templates/licenses.rst
-   templates/python.rst
-   templates/ci.rst
-   templates/soft_links.rst
+   templates/*

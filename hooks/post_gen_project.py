@@ -58,8 +58,10 @@ if __name__ == '__main__':
     if '{{ cookiecutter.use_sphinx_documentation }}' == 'no':
         remove_directory('docs')
 
-    if '{{ cookiecutter.install_github_issues_templates }}' == 'no':
+    if '{{ cookiecutter.install_issues_templates }}' == 'no':
         remove_directory('.github')
-
-    if '{{ cookiecutter.install_gitlab_issues_templates }}' == 'no':
+        remove_directory('.gitlab')
+    elif '{{ cookiecutter.install_issues_templates }}' == 'Gitlab':
+        remove_directory('.github')
+    elif '{{ cookiecutter.install_issues_templates }}' == 'Github':
         remove_directory('.gitlab')

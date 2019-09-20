@@ -1,9 +1,11 @@
 Licenses available
 ==================
 
+*Implemented in 0.0.3*
+
 Most of my projects are free to use for anybody and released under MIT license.
 
-For freelance projects I often do not set any license, as I sell some peace of
+For freelance projects I often do not set any license, as I sell some piece of
 code and then it is customer decision how to use or sell this.
 
 So I decided to include only this list of licenses:
