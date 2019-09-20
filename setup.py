@@ -10,7 +10,7 @@ with io.open('README.md', 'r', encoding='utf-8') as readme_file:
 
 setup(
     name='py3-bp',
-    version='0.0.3',
+    version='0.0.4',
     description=('Ultimate template for new Python 3 projects'),
     long_description=readme,
     long_description_content_type='text/markdown',
